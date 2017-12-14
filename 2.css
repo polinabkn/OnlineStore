@@ -1,0 +1,55 @@
+h2 {
+	color: #111;
+}
+.test {
+	
+	width: attr(data-completed);
+}
+.test-progress {
+	content: "";
+	background: black;
+	padding: 2px;
+	/*width: 20%;*/
+}
+
+.q-meta {
+	margin: 10px 0px 30px;
+}
+.q {
+	font-size: 20px;
+}
+.q-card {
+	border-radius: 18px;
+	background: radial-gradient(rgba(255,255,255,0), rgba(255,255,255,0) 50%, white 100%);
+	padding: 30px;
+}
+.answers {
+	box-sizing: border-box;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 30px;
+}
+.answer {
+	width: 40%;
+	background: rgba(255,255,255,0.9);
+	border: 2px rgb(253, 169, 218) solid;
+	text-align: center;
+	margin: 15px;
+	padding: 25px 15px;
+	border-radius: 12px;
+	transition: background .8s, border-color .8s;
+	cursor: pointer;
+}
+.answer:hover {
+	background: white;
+	border-color: rgb(150, 200, 170); 
+}
+
+.result {
+	font-size: 22px;
+}
+.result-count {
+	font-weight: 500;
+}

@@ -1,0 +1,55 @@
+.intro {
+	display: flex;
+	justify-content: space-between;
+	background: rgba(255,255,255,0.5);
+	border-radius: 8px;
+}
+.intro .text {
+	width: 45%;
+	padding: 40px 20px 20px;
+	color: #444;
+	text-align: center;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+}
+img {
+	display: block;
+	border-radius: 8px;
+}
+.intro p {
+	margin: 0px;
+}
+.intro .image {
+	width: 45%;
+}
+.buttons {
+	display: flex;
+	justify-content: space-evenly;
+}
+.buttons button, .our-button {
+	box-sizing: border-box;
+	width: 35%;
+	height: 80px;
+	padding: 12px;
+	border-radius: 10px;
+	border: 3px solid white;
+	cursor: pointer;
+	font-size: 20px;
+	color: #333;
+	background: radial-gradient(rgb(253, 169, 218), rgba(255,255,255,0.8) 100%);
+	background: rgba(253, 169, 218, 0.8);
+}
+.buttons .action {
+	background: radial-gradient(rgb(125, 210, 220), rgba(255,255,255,0.8) 100%);
+	background: rgba(125, 210, 220, 0.9);
+	font-weight: 500;
+	width: 51%;
+}
+.buttons button .under {
+	display: block;
+	font-size: 15px;
+	clear: both;
+	color: #111;
+	font-weight: 300;
+}

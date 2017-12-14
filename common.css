@@ -1,0 +1,69 @@
+body * {
+	font-family: 'Roboto', sans-serif;
+	box-sizing: border-box;
+}
+body {
+	margin: 0px;
+}
+/* color crema: BurlyWood ; */
+header {
+	width: 100%;
+	padding: 2% 5% 3%;
+	top: 0px;
+	left: 0px;
+	position: fixed;
+	background: linear-gradient(to bottom, rgb(253, 169, 218), rgba(0,0,0,0));
+	
+}
+.header__banner, .menu {
+	min-width: 60%;
+	max-width: 810px;
+	display: flex;
+	margin: 0px auto;
+	justify-content: space-between;
+}
+h1 {
+	cursor: pointer;
+	color: #111;
+}
+.menu li {
+	position: relative;
+	display: block;
+	font-size: 25px;
+	color: #333;
+	border: 3px solid white;
+	padding: 15px;
+	min-width: 150px;
+	text-align: center;
+	border-radius: 13px;
+	/*background: url(https://orig00.deviantart.net/6285/f/2015/149/b/6/sweet_candies_for_kind_man__short_story__by_kracko3d-d8v3u90.jpg);*/
+	/*background: url(https://img.thrivemarket.com/catalog/category/1900x280/CandiesBanner.jpg);
+	background-size: cover;*/
+	background: linear-gradient(to bottom, rgba(0,0,0,0), rgb(253, 169, 218));
+	cursor: pointer;
+	transition: color 1s;
+}
+.menu li:hover {
+	color: #ddd;
+}
+article {
+	height:100vh;
+}
+section {
+	min-width: 60%;
+	max-width: 810px;
+	padding: 200px 0px 0px;	
+	margin: 0px auto;		
+}
+
+.footer-image {
+	-webkit-mask-image: -webkit-gradient(linear, left bottom, left top, 
+		from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	z-index: -1;
+}
+.footer-image img {
+	opacity: 0.5;
+}

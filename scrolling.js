@@ -16,17 +16,18 @@ function scrollToStep(st) {
 	});
 }
 
-	function smooth(ev) {
-		ev.preventDefault();
-		ev.stopPropagation();
-		ev.deltaY < 0 ? scrollTop() : scrollBottom();
-		window.scrollTo({
+function smooth(ev) {
+	ev.preventDefault();
+	ev.stopPropagation();
+	ev.deltaY < 0 ? scrollTop() : scrollBottom();
+	window.scrollTo({
 	  top: window.innerHeight*step, 
 	  left: 0, 
 	  behavior: 'smooth' 
 	});
-		console.log(window.innerHeight*step);
-	}
+	console.log(window.innerHeight*step);
+}
 
-	onScroll = throttle(smooth, 800);
+onScroll = throttle(smooth, 800);
+
 window.addEventListener("wheel", onScroll);

@@ -7,15 +7,18 @@
 	<link rel="stylesheet" href="common.css">
 	<link rel="stylesheet" href="1.css">
 	<link rel="stylesheet" href="2.css">
+	<link rel="stylesheet" href="3.css">
+	<link rel="stylesheet" href="https://developers.google.com/maps/documentation/javascript/demos/demos.css">
 	<style>
 	</style>
 	<script src="throttle.js"></script>
 	<script src="scrolling.js"></script>
 	<script src="quiz.js"></script>
 	<script src="game.js"></script>
+	<script src="points.js"></script>
 	<script>
 		function onBuyClick() {
-			location = "https://vk.com/id55683744"
+			location = "https://vk.com/id55683744";
 		}
 	</script>
 </head>
@@ -26,9 +29,9 @@
 			<div class="contact">8-905-637-24-00</div>
 		</div>
 		<nav class="menu">
-			<li onclick="scrollToStep(0)">О нас</li>
-			<li>О вате</li>
-			<li>Как заказать?</li>
+			<li onclick="scrollToStep(0)">О вате</li>
+			<li onclick="scrollToStep(1)">Призовая игра</li>
+			<li onclick="scrollToStep(2)">Где купить?</li>
 		</nav>
 	</header>
 	<article>
@@ -52,19 +55,6 @@
 		<section class="test-area">
 			<h2>Пройди тест и получи скидку!</h2>
 			<div class="test" data-completed="20%">
-				<!--<div class="test-progress"></div>
-				<div class="q-meta">Вопрос <span class="q-num">1</span> из 4</div>
-				<div class="q-card">
-					<div class="q">
-						Как часто Вы кушаете сладкое?
-					</div>
-					<div class="answers">
-						<div class="answer">Каждый день по несколько раз</div>
-						<div class="answer">Раз в день</div>
-						<div class="answer">Несколько раз в неделю</div>
-						<div class="answer">Раз в неделю</div>
-					</div>
-				</div>-->
 			</div>
 		</section>
 		<div class="footer-image" style="bottom: -100vh">
@@ -72,7 +62,16 @@
 		</div>
 	</article>
 	<article>
-		<section></section>
+		<div class="map__info">
+			<img src="http://developer.buildsci.us/archives/interface/EEB%20Hub%20Simulation%20Platform%20Tools_files/iconmonstr-info-2-icon.svg" alt="info" class="info__icon">
+			<p class="info__text">
+				Забрать товар можно на пункте самовывоза. Чтобы узнать какой пункт к Вам ближе всего, кликните на карте Ваше место пребывания.
+			</p>
+		</div>
+		<section class="map-area">
+			<div id="map" style="z-index: 99"></div>
+		    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_jmBVCfCKjKt3FwAVtWTDK3Rbh-FFOto&callback=initMap" async defer></script>
+		</section>
 	</article>
 </body>
 </html>
